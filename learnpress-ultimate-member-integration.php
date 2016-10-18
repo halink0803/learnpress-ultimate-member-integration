@@ -28,6 +28,8 @@ require_once( 'includes/lib/class-learnpress-ultimate-member-integration-admin-a
 require_once( 'includes/lib/class-learnpress-ultimate-member-integration-post-type.php' );
 require_once( 'includes/lib/class-learnpress-ultimate-member-integration-taxonomy.php' );
 
+require_once( 'includes/profile-functions.php' );
+
 /**
  * Returns the main instance of LearnPress_Ultimate_Member_Integration to prevent the need to use globals.
  *
