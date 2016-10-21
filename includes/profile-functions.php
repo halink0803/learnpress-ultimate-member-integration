@@ -3,7 +3,7 @@
  * @Author: halink
  * @Date:   2016-10-18 10:42:54
  * @Last Modified by:   halink0803
- * @Last Modified time: 2016-10-19 13:35:43
+ * @Last Modified time: 2016-10-21 23:46:40
  */
 
 /* add a custom tab to show user courses */
@@ -46,15 +46,14 @@ function um_profile_content_courses_default( $args ) {
 								<a href="<?php echo $course->guid ?>" target="_blank"><?php echo $course->post_title ?></a>
 							</h3>
 							<div class="course-info">
-								<span class="info-university">MITx - </span>
-								<span class="info-course-id">11.126x</span>
+								<span class="info-university"></span>
+								<span class="info-course-id"></span>
 								<span class="info-date-block" data-tooltip="Hi">
-									Ended - Jun 15, 2016
 								</span>
 							</div>
 							<div class="wrapper-course-actions">
 								<div class="course-actions">
-								<a href="" class="enter-course archived" data-course-key="course-v1:MITx+11.126x_2+1T2016">View Archived Course<span class="sr">&nbsp;Introduction to Game Design</span></a>				                
+								<a href="" class="enter-course archived" data-course-key="">View Archived Course<span class="sr"><?php ?></span></a>				                
 									<div class="wrapper-action-more" data-course-key="course-v1:MITx+11.126x_2+1T2016">
 										<button type="button" class="action action-more" id="actions-dropdown-link-0" aria-haspopup="true" aria-expanded="false" aria-controls="actions-dropdown-0" data-course-number="11.126x_2" data-course-name="Introduction to Game Design" data-dashboard-index="0">
 											<span class="sr">Course options for</span>
@@ -63,18 +62,6 @@ function um_profile_content_courses_default( $args ) {
 											</span>
 											<span class="fa fa-cog" aria-hidden="true"></span>
 										</button>
-										<div class="actions-dropdown" id="actions-dropdown-0" tabindex="-1">
-											<ul class="actions-dropdown-list" id="actions-dropdown-list-0" aria-label="Available Actions" role="menu">
-												<li class="actions-item" id="actions-item-unenroll-0">
-													<a href="#unenroll-modal" class="action action-unenroll" rel="leanModal" data-course-id="course-v1:MITx+11.126x_2+1T2016" data-course-number="11.126x_2" data-course-name="Introduction to Game Design" data-dashboard-index="0" data-track-info="Are you sure you want to unenroll from %(course_name)s (%(course_number)s)?" id="unenroll-0">
-														Unenroll
-													</a>
-												</li>
-												<li class="actions-item" id="actions-item-email-settings-0">
-													<a href="#email-settings-modal" class="action action-email-settings" rel="leanModal" data-course-id="course-v1:MITx+11.126x_2+1T2016" data-course-number="11.126x_2" data-dashboard-index="0" data-optout="False" id="email-settings-0">Email Settings</a>
-												</li>
-											</ul>
-										</div>
 									</div>
 								</div>
 							</div>
@@ -87,7 +74,7 @@ function um_profile_content_courses_default( $args ) {
 								<ul>
 									<li>
 										<span class="category-icon xseries-icon" aria-hidden="true"></span>
-										<span><a href="/dashboard/programs/35/edtechx-educational-technology">EdTechX: Educational Technology XSeries</a></span>
+										<span><a href="/dashboard/programs/35/edtechx-educational-technology"></a></span>
 									</li>
 								</ul>
 							</div>
