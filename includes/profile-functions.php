@@ -3,7 +3,7 @@
  * @Author: halink
  * @Date:   2016-10-18 10:42:54
  * @Last Modified by:   halink0803
- * @Last Modified time: 2016-10-21 23:46:40
+ * @Last Modified time: 2016-10-24 14:19:31
  */
 
 /* add a custom tab to show user courses */
@@ -46,44 +46,19 @@ function um_profile_content_courses_default( $args ) {
 								<a href="<?php echo $course->guid ?>" target="_blank"><?php echo $course->post_title ?></a>
 							</h3>
 							<div class="course-info">
-								<span class="info-university"></span>
+								<span class="info-university">
+								<?php um_fetch_user(5); ?>Instructor: 
+								<a href="<?php echo um_user_profile_url(); um_reset_user(); ?>">
+								<?php the_author_meta( 'user_nicename' , $course->post_author ); ?>
+								</a>
+								</span>
 								<span class="info-course-id"></span>
 								<span class="info-date-block" data-tooltip="Hi">
 								</span>
 							</div>
-							<div class="wrapper-course-actions">
-								<div class="course-actions">
-								<a href="" class="enter-course archived" data-course-key="">View Archived Course<span class="sr"><?php ?></span></a>				                
-									<div class="wrapper-action-more" data-course-key="course-v1:MITx+11.126x_2+1T2016">
-										<button type="button" class="action action-more" id="actions-dropdown-link-0" aria-haspopup="true" aria-expanded="false" aria-controls="actions-dropdown-0" data-course-number="11.126x_2" data-course-name="Introduction to Game Design" data-dashboard-index="0">
-											<span class="sr">Course options for</span>
-											<span class="sr">&nbsp;
-												Introduction to Game Design
-											</span>
-											<span class="fa fa-cog" aria-hidden="true"></span>
-										</button>
-									</div>
-								</div>
-							</div>
 						</div>
 					</section>
 					<footer class="wrapper-messages-primary">
-						<ul class="messages-list">
-							<div class="message message-related-programs is-shown">
-								<span class="related-programs-preface" tabindex="0">Related Programs:</span>
-								<ul>
-									<li>
-										<span class="category-icon xseries-icon" aria-hidden="true"></span>
-										<span><a href="/dashboard/programs/35/edtechx-educational-technology"></a></span>
-									</li>
-								</ul>
-							</div>
-							<div class="message message-status course-status-processing is-shown">
-								<p class="message-copy">Your final grade:
-									<span class="grade-value">0%</span>.
-								</p>
-							</div>
-						</ul>
 					</footer>
 				</article>
 			</div>
