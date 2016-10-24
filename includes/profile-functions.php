@@ -3,7 +3,7 @@
  * @Author: halink
  * @Date:   2016-10-18 10:42:54
  * @Last Modified by:   halink0803
- * @Last Modified time: 2016-10-24 14:19:31
+ * @Last Modified time: 2016-10-24 14:34:22
  */
 
 /* add a custom tab to show user courses */
@@ -35,10 +35,10 @@ function um_profile_content_courses_default( $args ) {
 				<article class="course audit">
 
 					<section class="details" aria-labelledby="details-heading-11.126x_2">
-						<h2 class="hd hd-2 sr" id="details-heading-11.126x_2">Course details</h2>
+						<h2 class="hd hd-2 sr" id="details-heading-11.126x_2"><?php _e('Course details', 'learnpress-ultimate-member-integration') ?></h2>
 						<div class="wrapper-course-image" aria-hidden="true">
-							<a href="/courses/course-v1:MITx+11.126x_2+1T2016/info" data-course-key="course-v1:MITx+11.126x_2+1T2016" class="cover">
-								<img src="<?php echo $image[0]; ?>" class="course-image" alt="11.126x_2 Introduction to Game Design Home Page">
+							<a href="<?php echo $course->guid ?>" class="cover">
+								<img src="<?php echo $image[0]; ?>" class="course-image" alt="<?php echo $course->post_title ?>">
 							</a>
 						</div>
 						<div class="wrapper-course-details">
@@ -47,7 +47,7 @@ function um_profile_content_courses_default( $args ) {
 							</h3>
 							<div class="course-info">
 								<span class="info-university">
-								<?php um_fetch_user(5); ?>Instructor: 
+								<?php um_fetch_user(5); ?><?php _e('Instructor:', 'learnpress-ultimate-member-integration')?>
 								<a href="<?php echo um_user_profile_url(); um_reset_user(); ?>">
 								<?php the_author_meta( 'user_nicename' , $course->post_author ); ?>
 								</a>
