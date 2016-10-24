@@ -3,7 +3,7 @@
  * @Author: halink
  * @Date:   2016-10-18 10:42:54
  * @Last Modified by:   halink0803
- * @Last Modified time: 2016-10-24 14:34:22
+ * @Last Modified time: 2016-10-24 14:41:49
  */
 
 /* add a custom tab to show user courses */
@@ -23,7 +23,7 @@ add_action('um_profile_content_courses_default', 'um_profile_content_courses_def
 function um_profile_content_courses_default( $args ) {
 	$user_id = get_current_user_id();
 	$courses = learn_press_get_enrolled_courses($user_id);
-	print_r($courses);
+	// print_r($courses);
 	?>
 	<ul class="courses-listing">
 	<?php
