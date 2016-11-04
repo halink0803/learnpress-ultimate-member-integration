@@ -2,10 +2,10 @@
 /*
  * Plugin Name: LearnPress Ultimate Member Integration
  * Version: 1.0
- * Plugin URI: http://www.hughlashbrooke.com/
+ * Plugin URI: http://www.halink.space/
  * Description: This is your starter template for your next WordPress plugin.
- * Author: Hugh Lashbrooke
- * Author URI: http://www.hughlashbrooke.com/
+ * Author: Ha Link
+ * Author URI: http://www.halink.space/
  * Requires at least: 4.0
  * Tested up to: 4.0
  *
